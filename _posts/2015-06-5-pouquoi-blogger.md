@@ -48,5 +48,5 @@ Dans son livre [The Passionate Programmer](http://www.amazon.com/The-Passionate-
 - Exécuter .
 - Faire de la marketing autour .
 
-Le blog permet est un moyen de se faire connaître . 
+Le blog est un moyen de se faire connaître, et faire de la marketing autour de notre produit .
  
