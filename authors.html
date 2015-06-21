@@ -1,0 +1,51 @@
+---
+layout: page
+title: Auteurs	
+header: Posts By author
+group: navigation
+---
+
+<div class="col-sm-3 col-xs-6">
+    <ul class="nav nav-tabs-vertical">
+      {% assign authors_list = site.data.authors %}
+      {% if authors_list.first[0] == null %}
+        {% for author in authors_list %}
+            <li>
+                <a href="{{ site.BASE_PATH }}/{{ site.authors_path }}#{{ author | replace:' ','-' }}-ref" data-toggle="tab" >
+                  {{ author.name}} <span class="badge pull-right">{{ site.data.authors[author].size }}</span>
+               </a>
+            </li>
+        {% endfor %}
+      {% else %}
+        {% for author in authors_list %}
+            <li>
+                <a href="{{ site.BASE_PATH }}/{{ site.authors_path }}#{{ author[0] | replace:' ','-' }}-ref" data-toggle="tab" id="{{author[0]}}">
+                    {{ author[1].name}} <span class="badge pull-right">{{ author[1].size }}</span>
+                </a>
+            </li>
+        {% endfor %}
+      {% endif %}
+      {% assign authors_list = nil %}
+    </ul>
+</div>
+<!-- Tab panes -->
+<div class="tab-content col-sm-9 col-xs-6">
+
+{% for author in site.data.authors%}
+    <div class="tab-pane" id="{{ author[0] | replace:' ','-' }}-ref">
+      <h2 style="margin-top: 0px">Posts de {{ author[1].name}}</h2>
+      <ul class="list-unstyled">
+        {% for post in site.posts %}
+          {% if post.author != null %}
+            {% if post.author == author[0]  %}	
+              <li style="line-height: 35px;"><a href="{{ site.BASE_PATH }}{{post.url}}">{{post.title}}</a> <span class="text-muted">- {{ post.date | date: "%B %d, %Y" }}</span></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+
+</div>
+
+<div class="clearfix"></div>
