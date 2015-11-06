@@ -21,6 +21,7 @@ body {
 
 .top-sticker, #top-sticker{
 top: 45px !important;
+position: fixed;
 }
 
 #header .searchbox, #header .login {
