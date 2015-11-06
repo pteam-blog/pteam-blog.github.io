@@ -183,3 +183,8 @@ td.progress-bar-left {
     background: #000;
     color: rgb(0, 255, 0);
 }
+.tabBar [type=radio]:checked ~ a{
+    border: solid 1px rgba(240, 240, 240, 0.14);
+    background: #00D85D;
+    box-shadow: 10px 10px 5px rgba(0, 153, 34, 0.61);
+}
