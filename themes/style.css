@@ -177,5 +177,5 @@ td.progress-bar-left {
 }
 
 #side-panel {
-  background-image: url(printemps.jpg) !important;
+  background: url(printemps.jpg) #fff 99px 63px no-repeat!important;
 }
