@@ -175,3 +175,7 @@ td.progress-bar-left {
 #main-panel-content > div:nth-child(2) {
 	background-color: transparent !important;
 }
+
+#main-table {
+  background-image: url(printemps.jpg) !important;
+}
