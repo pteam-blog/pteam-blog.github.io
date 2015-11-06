@@ -13,14 +13,18 @@ body {
 
 .logo {
     width: 100% !important;
-    height: 34px !important;
+    height: 67px !important;
     background: url('logo-printemps.png') no-repeat;
-    margin-top: 8px;
+    margin-top: -17px;
     cursor: pointer;
 }
 
-.top-sticker .noedge {
+.top-sticker, #top-sticker{
 top: 51px;
+}
+
+#header .searchbox, #header .login {
+    padding: 26px 11px;
 }
 #jenkins-head-icon, #jenkins-name-icon, #right-top-nav {
     display: none;
@@ -35,6 +39,9 @@ top: 51px;
     font-weight: normal;
 }
 
+#header {
+    height: 67px;
+}
 #header,
 #footer-container {
     background: none repeat scroll 0 0 #fff !important;
