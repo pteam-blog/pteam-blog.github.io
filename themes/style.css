@@ -20,7 +20,7 @@ body {
 }
 
 .top-sticker, #top-sticker{
-top: 51px;
+top: 45px !important;
 }
 
 #header .searchbox, #header .login {
