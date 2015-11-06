@@ -14,10 +14,11 @@ body {
 .logo {
     width: 100% !important;
     height: 67px !important;
-    background: url('logo-printemps.png') no-repeat;
+    background: url('logo-printemps.png') #fff no-repeat;
     margin-top: -17px;
     cursor: pointer;
     position: fixed;
+    left: -16px;
 }
 
 .top-sticker, #top-sticker{
