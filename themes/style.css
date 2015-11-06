@@ -12,13 +12,16 @@ body {
 }
 
 .logo {
-    width: 154px !important;
+    width: 100% !important;
     height: 34px !important;
     background: url('logo-printemps.png') no-repeat;
     margin-top: 8px;
     cursor: pointer;
 }
 
+.top-sticker .noedge {
+top: 51px;
+}
 #jenkins-head-icon, #jenkins-name-icon, #right-top-nav {
     display: none;
 }
@@ -34,8 +37,8 @@ body {
 
 #header,
 #footer-container {
-    background: none repeat scroll 0 0 #333333 !important;
-    color: #999999;
+    background: none repeat scroll 0 0 #fff !important;
+    color: #fff;
 }
 
 #footer-container a {
